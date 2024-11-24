@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-image: url('imagens/fundo.webp');
+    background-size: cover; /* Faz com que a imagem cubra toda a página */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Faz o fundo ficar fixo ao rolar a página */
+}
+
+h1{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #FFE599;
+    -webkit-text-stroke: 1px #666666;/* Cor e espessura do contorno */
+}
+
+h2{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #FF9999;
+    font-family: "Montserrat", sans-serif;
+}
+
+p{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: 0 auto;
+    color: #666666;
+    font-family: "lato", sans-serif;
+    text-indent: 2em; /*recuo*/
+}
+
+hr{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.caixa-de-texto{
+    background-color: rgba(248, 248, 248, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.titulo{
+    background-color: rgba(153, 214, 165, 0.8);
+    border-radius: 70px;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%; 
+    font-family: "Montserrat", sans-serif;
+}
+
+.cabeçalho{
+    background-color: rgba(153, 204, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.cabeçalho p{
+    text-align: center;
+    text-indent: 0em;
+}
+
+.Botões{
+    text-align: center;
+    background-color: #FF9999;
+    border-radius: 70px;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    border: 1px solid black;
+}
+
+.Botões button{
+    background-color: #99D6A5;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6x rgba(0, 0, 0, 0.2); /* Adiciona uma sombra abaixo do botão*/
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition: all 0.3 ease; /* Cria uma animação suave para qualquer mudança nas propriedades do botão, como a sombra ou a posição, ao passar o mouse. O efeito dura 0.3 segundos. */
+    background: linear-gradient(to button, #FF9999, #99D6A5);
+}
+
+button:hover {
+    background-color: #007A33;
+    transform: translateY(-2px); /* Move o botão 2px para cima ao passar o mouse, simulando que ele está "flutuando". */
+}
+
+.Botões button a{
+    text-decoration: none;
+    color: #FFE599;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+}
+
+.apreviaturas p{
+    text-align: center;
+    text-indent: 0em;
+}
+
+.Referências p{
+    text-align: center;
+    text-indent: 0em;
+}
+
+b{
+    color: black;
+}
+
+h3{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #FF9999;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Créditos p{
+    text-align: center;
+    text-indent: 0em;
+}
+
+.Créditos a{
+    text-decoration: none;
+}
