@@ -1,3 +1,13 @@
+// Garantir que o áudio seja retomado corretamente ao voltar para a página
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) { // Página carregada do cache
+        const savedTime = localStorage.getItem('audioTime');
+        if (savedTime) {
+            audio.currentTime = savedTime;
+        }
+        audio.play(); // Retomar a reprodução
+    }
+});
 document.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", function(event) {
         event.preventDefault(); // Impede o redirecionamento imediato
