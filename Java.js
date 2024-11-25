@@ -1,3 +1,8 @@
+// Salvar o tempo da música antes de sair da página
+window.addEventListener('beforeunload', () => {
+    localStorage.setItem('audioTime', audio.currentTime);
+});
+
 // Garantir que o áudio seja retomado corretamente ao voltar para a página
 window.addEventListener('pageshow', (event) => {
     if (event.persisted) { // Página carregada do cache
