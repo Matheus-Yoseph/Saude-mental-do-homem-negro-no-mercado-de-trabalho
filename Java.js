@@ -8,10 +8,16 @@ window.addEventListener('pageshow', (event) => {
         audio.play(); // Retomar a reprodução
     }
 });
+
 document.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", function(event) {
+        // Verifica se o link tem target="_blank"
+        if (link.target === "_blank") {
+            return; // Não intercepta links que abrem em uma nova aba
+        }
+
         event.preventDefault(); // Impede o redirecionamento imediato
-        
+
         const audio = document.getElementById("transition-sound");
         const href = this.href; // Obtém o URL do link
 
